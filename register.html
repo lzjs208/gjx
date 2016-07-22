@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximun-scale=1, user-scalable=no">
+<link rel="stylesheet" href="plugins/bootstrap-3.3.4/css/bootstrap.min.css">
+<link rel="stylesheet" href="style/common.css">
+<link rel="stylesheet" href="style/index.css">
+<title>User Register</title>
+</head>
+<body>
+	
+<div class="header">
+	<div class="header-tips">您好，欢迎来到天合积分交易平台！&nbsp;<a href="/">[登录]</a></div>
+</div>
+
+<div class="navbar navbar-default narvar-fixed-top">
+	<div class="navbar-lwrap">
+		<a href="/" class="logo"><img src="images/logo.jpg" width="310" height="85"></a>
+		<ul class="navbar-menu">
+			<li><a href="/">首页</a></li>
+			<li><a href="member">交易中心</a></li>
+			<li><a href="member">个人中心</a></li>
+			<li><a href="javascript:void(0);">行情中心</a></li>
+			<li><a href="about">关于我们</a></li>
+			<li><a href="news">新闻中心</a></li>
+			<li><a href="help">帮助中心</a></li>
+		</ul>
+	</div>
+	<div style="clear:both;"></div>
+</div>
+
+<div class="bigbox">
+	<div class="regbg"></div>
+	<div class="regform">
+			<h1 class="tc"><span class="find">欢迎您注册交易平台会员</span><p></p></h1>
+			<!--注册账号-->
+			<form name="regForm" id="regForm" method="post">
+				<ul class="form-input reg-form-input">
+					<li>
+						<label for="inputUsername">用 户 名：</label>
+						<input type="text" name="username" id="username" class="form-control" placeholder="请输入用户名" autofocus="">
+					</li>
+					<li>
+						<label for="inputPassword">设置密码：</label>
+						<input type="password" name="pass" id="pass" class="form-control" placeholder="请设置登陆密码">
+					</li>
+					<li>
+						<label for="inputPassword">重复密码：</label>
+						<input type="password" name="pass2" id="pass2" class="form-control" placeholder="请重复确认密码">
+					</li>
+					<li>
+						<label for="email">邮箱地址：</label>
+						<input type="email" name="email" id="email" class="form-control" placeholder="请输入邮箱地址">
+					</li>
+					<li>
+						<label for="phone">手机号码：</label>
+						<input type="phone" name="phone" id="phone" class="form-control" placeholder="请输入手机号码">
+					</li>
+					<li class="verify">
+						<label for="verifycode">验 证 码：</label>
+						<input type="text" maxlength="6" name="code" id="code" class="form-control" placeholder="请输入邮箱验证码">
+						<span id="getSMScode">获取邮箱验证码</span>
+					</li>
+					<li class="btn signup"><button>注   册</button></li>
+				</ul>
+			</form>
+			<!--注册账号-->
+		</div>
+</div>	
+
+<div id="footer">
+	<div class="container">
+		<div class="link">
+			<img src="images/link01.png"><img src="images/link02.png"><img src="images/link03.png">
+		</div>
+  	<p class="text-muted">
+  	CreditEase © 2016-2018 GX-Life Coin<br>
+		Email：tianheb@vip.163.com
+		</p>
+  </div>
+</div>
+
+<script src="../js/jquery-1.11.3.min.js"></script>
+<script src="plugins/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+<script src="plugins/layer/layer.js"></script>
+<script src="js/jquery.reg.js"></script>
+</body>
+</html>

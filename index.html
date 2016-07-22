@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximun-scale=1, user-scalable=no">
+<link rel="stylesheet" href="plugins/bootstrap-3.3.4/css/bootstrap.min.css">
+<link rel="stylesheet" href="style/common.css">
+<link rel="stylesheet" href="style/index.css">
+<title>天合G分交易平台</title>
+</head>
+<body>
+
+<div class="header">
+	<div class="header-tips">您好，欢迎来到天合积分交易平台！&nbsp;<a href="register.html">[注册]</a></div>
+</div>
+
+<div class="navbar navbar-default narvar-fixed-top">
+	<div class="navbar-lwrap">
+		<a href="/" class="logo"><img src="images/logo.jpg" width="227" height="85"></a>
+		<ul class="navbar-menu">
+			<li><a href="/">首页</a></li>
+			<li><a href="member">交易中心</a></li>
+			<li><a href="member">个人中心</a></li>
+			<li><a href="javascript:void(0);">行情中心</a></li>
+			<li><a href="about">关于我们</a></li>
+			<li><a href="news">新闻中心</a></li>
+			<li><a href="help">帮助中心</a></li>
+		</ul>
+	</div>
+</div>
+
+<div class="blank-box"></div>
+
+<div class="index-banner">
+	<div class="bcontainer">
+		<ul>
+			<li style="background:url(images/b1.jpg) no-repeat center;"></li>
+		</ul>
+		<div class="outer-container">
+		<div class="lcontainer">
+			<div class="form-login">
+			<form class="form-signin" id="form-signin" method="post">
+				<h4>会员登录</h4>
+				<div class="form-input">
+					<div>
+						<label for="inputUsername" class="sr-only">Username</label>
+						<input type="text" id="inputUsername" class="form-control" placeholder="用户名" autofocus>
+					</div>
+					<div>
+						<label for="inputPassword" class="sr-only">Password</label>
+						<input type="password" id="inputPassword" class="form-control" placeholder="请输入密码">
+					</div>
+					<div>
+						<label for="verifyCode" class="sr-only">verifyCode</label>
+						<input type="text" id="verifyCode" maxlength="4" class="form-control code" placeholder="验证码">
+						<img id="validcode" onclick="this.src=this.src+'?';" src="member/login/verifycode.php">
+					</div>
+					<div>
+						<button class="btn-lg btn-primary btn-block" type="submit">登录</button>
+					</div>
+					<div class="signin">
+						<label><a href="forget.html">忘记密码？</a></label>
+					</div>
+					<div class="sigin-line"></div>
+					<div class="sigin-tips"><img src="images/ico-money.png" width="23" height="22">GX-Coin 安全防护，多重验证保护交易安全 </div>
+				</div>
+			</form>
+			</div>
+		</div>
+		</div>
+	</div>		
+</div>
+
+<div class="notice">
+	<div class="notice_content"><img src="images/ico_notice.gif" width="13" height="14">&nbsp;公告：【全新功能】行情来了,就选快速充值！ 有卡就能充,1秒即到账</div>
+</div>
+
+<div class="special">
+	<div class="spe_content">
+		<div>
+			<span></span>
+			<h3>循环经济　互利共赢</h3>
+			<p>只有诚信的合作，才有互利共赢的机会</p>
+		</div>
+		<div>
+			<span></span>
+			<h3>多种图表　实时显示</h3>
+			<p>交易信息、成交量通过曲线图，K线图显示，<br>
+				图表可选择导出图形，方便展示，</p>
+		</div>
+		<div>
+			<span></span>
+			<h3>资金帐户　安全无忧</h3>
+			<p>三层防火墙隔离技术，杜绝系统入侵，双重容<br>
+				灾备份，所有隐私信息经严格加密，防止任何人<br>
+				盗取用户信息，严格保护用户账户信息安全。</p>
+		</div>
+		<div>
+			<span></span>
+			<h3>快捷提现　即时到账</h3>
+			<p>申请提现，后台专员审核24小时到账	</p>
+		</div>
+	</div>
+</div>
+
+<div class="quotation">
+	<ul id="myTab" class="nav nav-tabs">
+		<li class="active"><a href="#CNY" data-toggle="tab">CNY/GC</a></li>
+		<li><a href="#BTC" data-toggle="tab">BTC/GC</a></li>
+		<li><a href="#LTC" data-toggle="tab">LTC/GC</a></li>
+	</ul>
+	<div id="myTabContent" class="tab-content">
+	   <div class="tab-pane fade in active" id="CNY">
+				<div id="cnyContainer" style="width:1200px; height:600px; background:#fff;"></div>
+	   </div>
+	   <div class="tab-pane" id="BTC">
+	      <div id="btcContainer" style="width:1200px; height:600px; background:#fff;"></div>
+	   </div>
+	   <div class="tab-pane" id="LTC">
+	      <div id="ltcContainer" style="width:1200px; height:600px; background:#fff;"></div>
+	   </div>
+	</div>
+</div>
+
+<div id="footer">
+	<div class="container">
+		<div class="link">
+			<img src="images/link01.png"><img src="images/link02.png"><img src="images/link03.png">
+		</div>
+  	<p class="text-muted">
+  	CreditEase © 2016-2018 GX-Life Coin<br>
+		Email：tianheb@vip.163.com
+		</p>
+  </div>
+</div>
+
+<script src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script src="plugins/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+<script src="plugins/Highstock/js/highstock.js"></script>
+<script src="js/highStock.ready.js"></script>
+<script src="plugins/Highstock/js/modules/exporting.js"></script>
+<script>
+$(function () {
+	var url = 'include/get.args.php?id=';
+	getHighstock(1, "#cnyContainer", 'CNY/GC', 'CNY', url);
+	getHighstock(2, "#btcContainer", 'BTC/GC', 'BTC', url);
+	getHighstock(3, "#ltcContainer", 'LTC/GC', 'LTC', url);
+
+})
+</script>
+<script src="plugins/layer/layer.js"></script>
+<script src="js/jquery.login.js"></script>
+<script>
+$(function () {
+	$('#myTab li:eq(0) a').tab('show');
+});
+</script>
+</body>
+</html>

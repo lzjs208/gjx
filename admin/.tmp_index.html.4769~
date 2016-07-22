@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximun-scale=1, user-scalable=no">
+<link rel="stylesheet" href="../plugins/bootstrap-3.3.4/css/bootstrap.min.css">
+<link rel="stylesheet" href="../style/common.css">
+<link rel="stylesheet" href="../style/index.css">
+<title>天合G分交易平台管理</title>
+</head>
+<body>
+
+<div class="navbar navbar-default narvar-fixed-top">
+	<div class="navbar-lwrap">
+		<div class="logo"><a href="/index.html"><img src="../images/logo.png"></a></div>
+		<ul class="navbar-menu">
+			<li><a href="/">首页</a></li>
+			<li><a href="javascript:void(0);">交易中心</a></li>
+			<li><a href="javascript:void(0);">个人中心</a></li>
+			<li><a href="javascript:void(0);">行情中心</a></li>
+		</ul>
+	</div>
+</div>
+
+<div class="bcontainer">
+	<ul>
+		<li><img src="../images/banner1.jpg"></li>
+	</ul>
+</div>
+
+<div class="container">
+	<div class="lcontainer">
+		<div class="form-login">
+			<form class="form-signin admin-login" id="form-signin" method="post">
+			<h4>管理员登陆</h4>
+			<ul class="form-input">
+				<li>
+						<label for="inputUsername" class="sr-only">Username</label>
+						<input type="text" id="admUsername" class="form-control" placeholder="用户名" autofocus>
+				</li>
+				<li>
+						<label for="inputPassword" class="sr-only">Password</label>
+						<input type="password" id="admPassword" class="form-control" placeholder="请输入密码">
+				</li>
+				<li>
+						<label for="verifyCode" class="sr-only">verifyCode</label>
+						<input type="text" id="verifyCode" maxlength="4" class="form-control code" placeholder="验证码">
+						<img id="validcode" onclick="this.src=this.src+'?';" src="login/verifycode.php">
+				</li>
+				<li>
+					<button class="btn-lg btn-primary btn-block" type="button">登陆</button>
+				</li>
+			</ul>
+			</form>
+		</div>
+	</div>		
+</div>
+
+<div class="quotation">
+	<ul id="myTab" class="nav nav-tabs">
+		<li class="active"><a href="#CNY" data-toggle="tab">CNY/GC</a></li>
+		<li><a href="#BTC" data-toggle="tab">BTC/GC</a></li>
+		<li><a href="#LTC" data-toggle="tab">LTC/GC</a></li>
+	</ul>
+	<div id="myTabContent" class="tab-content">
+	   <div class="tab-pane fade in active" id="CNY">
+	      <div id="cnyContainer" style="width:1200px; height:600px; background:#fff;"></div>
+	   </div>
+	   <div class="tab-pane" id="BTC">
+	       <div id="btcContainer" style="width:1200px; height:600px; background:#fff;"></div>
+	   </div>
+	   <div class="tab-pane" id="LTC">
+	       <div id="ltcContainer" style="width:1200px; height:600px; background:#fff;"></div>
+	   </div>
+	</div>
+</div>
+
+<div id="footer">
+	<div class="container">
+  	<p class="text-muted">&copy;CopyRight 2016 All Rights Reserved</p>
+  </div>
+</div>
+
+<script src="../js/jquery-1.11.3.min.js"></script>
+<script src="../plugins/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+<script src="../plugins/Highstock/js/highstock.js"></script>
+<script src="../plugins/Highstock/js/modules/exporting.js"></script>
+<script>
+$(function () {
+	
+	getHighstock(1, "#cnyContainer", 'CNY/GC', 'CNY');
+	getHighstock(2, "#btcContainer", 'BTC/GC', 'BTC');
+	getHighstock(3, "#ltcContainer", 'LTC/GC', 'LTC');
+	
+	function getHighstock(_id, _container, _title, _series){
+		$.getJSON('../include/get.args.php?id=' + _id, function(data){
+			$(_container).highcharts('StockChart', {
+				rangeSelector : {
+                selected : 1
+            },
+            title : {
+                text : _title
+            },
+            series : [{
+                name : _series,
+                data : data,
+                tooltip: {
+                    valueDecimals: 2
+                }
+            }]
+			});
+		})
+	}
+})
+</script>
+<script src="../plugins/layer/layer.js"></script>
+<script src="js/login.js"></script>
+<script>
+$(function () {
+	$('#myTab li:eq(0) a').tab('show');
+});
+</script>
+</body>
+</html>

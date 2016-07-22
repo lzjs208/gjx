@@ -1,0 +1,14 @@
+.navbar-default { border-bottom:1px solid #ccc;}
+.header-tips { width:1002px; margin:auto auto;}
+.navbar-lwrap { width:1002px; margin:auto auto;}
+.container { width:1002px; margin:20px auto auto auto; background: #fff;}
+.news_body { display:inline-block; width:680px; margin:20px; vertical-align: top;}
+.news_body .title { text-align:left; font-size:18px; padding:10px 0px; font-weight:bold;}
+.news_body .attr { padding:15px 0px; border-bottom:1px solid #eee;}
+.news_body .attr span.r { float:right;}
+.art_content { margin-top:15px; line-height:26px;}
+
+.news_hot { display:inline-block; width:220px; margin:20px;}
+.m_hd { border-top:1px solid #ccc; border-bottom:1px solid #ccc; height:40px; line-height:40px;}
+.news_hot span.head { border-left:4px solid #db7d04; padding:0 10px; font-size:20px;}
+.artlist li { height:28px; line-height:28px;}

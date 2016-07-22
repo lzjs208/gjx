@@ -1,0 +1,19 @@
+body { margin: 8px;}
+#drag {
+  position: relative; background:#e8e8e8; width:300px; height: 34px; line-height:34px; text-align: center;
+}
+#drag .drag_bg {
+  background:#7ac23c; width:0px; height: 34px;
+}
+#drag .drag_text {
+  position: absolute; top:0px; width:300px; -webkit-user-select: none; user-select: none; -moz-user-select: none; -ms-user-select: none;
+}
+#drag .handler {
+  position: absolute; top:0px; left:0px; width:40px; height:32px; border:1px solid #ccc; cursor:move;
+}
+.handler_bg {
+  background:#fff url("../img/arrow.png") no-repeat center;
+}
+.handler_ok_bg {
+  background: #fff url("../img/ok.png") no-repeat center;
+}

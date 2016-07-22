@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link href="css/drag.css" type="text/css" rel="stylesheet">
+  <script src="../js/jquery-1.11.3.min.js"></script>
+  <script src="../js/drag.js"></script>
+  <script>
+
+//    addOnload(initOne);
+//
+//    function addOnload(newFunction){
+//      var oldOnload = window.onload;
+//
+//      if(typeof oldOnload == 'function'){
+//        window.onload = function(){
+//          if(oldOnload){
+//            oldOnload;
+//          }
+//          newFunction;
+//        }
+//      }
+//      else{
+//        window.onload = newFunction;
+//      }
+//    }
+//
+//    function initOne(){
+//      document.getElementById('pageBody').style.backgroundColor = '#FF0000';
+//    }
+//
+//    setTimeout(function(){
+//      window.onload = initOne();
+//    },0);
+
+  </script>
+</head>
+<body>
+
+<div id="pageBody"><h1>Welcome to Web Site!</h1></div>
+
+<script>
+////冒泡排序
+//Array.prototype.bubble_sort = function(){
+//  var i, j, temp;
+//  for(i = 0; i < this.length; i++){
+//    for(j = 0; j < this.length; j++){
+//      if(this[j] > this[j + 1]){
+//        temp = this[j];
+//        this[j] = this[j + 1];
+//        this[j + 1] = temp;
+//      }
+//    }
+//  }// end for
+//  return this;
+//}
+//
+//var num = [2,54,22,38,20,10,18,6,29,26,35,0,11,21,24,25,31,42,17,50,37,34];
+//num.bubble_sort();
+//for(var i = 0; i<num.length;i++){
+//  document.body.innerHTML += num[i] + '<br>';
+//}
+</script>
+
+<div id="drag"></div>
+
+<script>
+$('#drag').drag();
+</script>
+</body>
+</html>

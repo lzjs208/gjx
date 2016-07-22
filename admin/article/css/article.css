@@ -1,0 +1,11 @@
+.art_in { border:1px solid #cacaca; border-radius:2px; line-height:20px;}
+
+.thead span.nocur { margin-left:10%;}
+
+.mg20 { margin:20px;}
+
+#thumbs_area div { display:inline-block; margin:0px 10px; position:relative;}
+#thumbs_area div img { display:block;}
+#thumbs_area div input { width:100px;}
+#thumbs_area div a {display: block; position:absolute;}
+#thumbs_area div span { position: absolute; right:0; cursor: pointer;}

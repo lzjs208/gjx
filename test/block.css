@@ -1,0 +1,4 @@
+@charset "utf-8";
+/* CSS Document */
+.li span,.li .check,.li img{display:inline;}
+.li .edit{display:none;}
